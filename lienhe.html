@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="favicon.ico" rel="shortcut icon" />
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <title>Liên hệ</title>
+</head>
+
+<body>
+  <header>
+    <nav class="text-center white-words">
+      <div class="white-words">
+        <a href="trangchu.html"><span>supertrip.com</span></a>
+      </div>
+      <div>
+        <i class="fa-solid fa-user-tie"></i>
+        <a href="dangnhap.html">| Nhóm 6</a>
+      </div>
+      <div>
+        <ul>
+          <li><a class="link" href="gioithieu.html">Giới thiệu</a></li>
+          <li class="wall">|</li>
+          <li><a class="link" href="sanpham.html">Sản phẩm</a></li>
+          <li class="wall">|</li>
+          <li><a class="link" href="dangky.html">Đăng ký</a></li>
+          <li class="wall">|</li>
+          <li><a class="link" href="dangnhap.html">Đăng nhập</a></li>
+          <li class="wall">|</li>
+          <li><a class="link" href="lienhe.html">Liên hệ</a></li>
+          <li><i class="fa-solid fa-bars"></i>
+            <section>
+              <a href="gioithieu.html">Giới thiệu</a>
+              <a href="sanpham.html">Sản phẩm</a>
+              <a href="dangky.html">Đăng ký</a>
+              <a href="dangnhap.html">Đăng nhập</a>
+              <a href="lienhe.html">Liên hệ</a>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="dark-img form-normal" id="contact">
+    <form method="post" enctype="application/x-www-form-urlencoded">
+      <fieldset>
+        <h1>Liên hệ</h1>
+        <div>
+          <input type="text" placeholder="Họ và tên" name="fullname">
+          <i class="fa-solid fa-user"></i>
+          <label class="hidden red-words" id="not-fullname">Họ và tên hơn 4 ký tự</label>
+        </div>
+        <div>
+          <input type="text" placeholder="Email" name="email">
+          <i class="fa-solid fa-envelope"></i>
+          <label class="hidden red-words" id="not-email">Email không hợp lệ</label>
+        </div>
+        <div>
+          <input type="password" placeholder="Số điện thoại" name="phonenumber">
+          <i class="fa-solid fa-phone"></i>
+          <label class="hidden red-words" id="not-phonenumber">Số điện thoại không hợp lệ</label>
+        </div>
+        <div>
+          <textarea placeholder="Thông tin liên hệ" rows="7" cols="50"></textarea>
+          <i class="fa-solid fa-pen-to-square"></i>
+          <label class="hidden red-words" id="not-contactcontent">Không được để trống</label>
+        </div>
+        <button class="white-button" type="submit">Liên hệ</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <div class="gray-background">
+      <ul>
+        <li>
+          <p><b>Địa chỉ: </b>123 đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt
+            Nam</p>
+        </li>
+        <li>
+          <p><b>Điện thoại: </b>0292999999</p>
+        </li>
+        <li>
+          <p><b>Email: </b>supertrip@gmail.com.vn</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p><i class="fa-brands fa-tiktok"></i> @supertrip123</p>
+        </li>
+        <li>
+          <p><i class="fa-brands fa-facebook"></i> SuperTrip Company</p>
+        </li>
+        <li>
+          <p><i class="fa-brands fa-youtube"></i> SuperTrip Vlog</p>
+        </li>
+      </ul>
+      <img src="back-to-top.png" alt="back-to-top" />
+    </div>
+    <div class="blue-background white-words">
+      <p>
+        <b>Bản quyền: </b>© 2024 Công ty Du Lịch SuperTrip. Tất cả các quyền
+        được bảo lưu.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
