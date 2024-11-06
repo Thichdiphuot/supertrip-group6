@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="favicon.ico" rel="shortcut icon" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Sản phẩm</title>
+</head>
+
+<body>
+    <header>
+        <nav class="text-center white-words">
+            <div class="white-words">
+                <a href="trangchu.html"><span>supertrip.com</span></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tie"></i>
+                <a href="dangnhap.html">| Nhóm 6</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a class="link" href="gioithieu.html">Giới thiệu</a></li>
+                    <li class="wall">|</li>
+                    <li><a class="link" href="sanpham.html">Sản phẩm</a></li>
+                    <li class="wall">|</li>
+                    <li><a class="link" href="dangky.html">Đăng ký</a></li>
+                    <li class="wall">|</li>
+                    <li><a class="link" href="dangnhap.html">Đăng nhập</a></li>
+                    <li class="wall">|</li>
+                    <li><a class="link" href="lienhe.html">Liên hệ</a></li>
+                    <li><i class="fa-solid fa-bars"></i>
+                        <section>
+                            <a href="gioithieu.html">Giới thiệu</a>
+                            <a href="sanpham.html">Sản phẩm</a>
+                            <a href="dangky.html">Đăng ký</a>
+                            <a href="dangnhap.html">Đăng nhập</a>
+                            <a href="lienhe.html">Liên hệ</a>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="blue-background white-words" id="tour-order-container">
+            <div id="tour-order-form">
+                <h1>Đặt tour</h1>
+                <h2>Giá tour được tính theo đơn giá người/ ngày</h2>
+                <form class="white-background" method="post" enctype="application/x-www-form-urlencoded">
+                    <div>
+                        <label>Chọn tour</label>
+                        <br>
+                        <select class="blue-border" size="0">
+                            <option value="0" selected disabled hidden>Tour muốn đặt</option>
+                            <option value="1">England</option>
+                            <option value="2">VietNam</option>
+                            <option value="3">Australia</option>
+                            <option value="4">Maldives</option>
+                            <option value="5">France</option>
+                            <option value="6">China</option>
+                            <option value="7">The USA</option>
+                            <option value="8">Japan</option>
+                            <option value="9">Iceland</option>
+                            <option value="10">Italy</option>
+                            <option value="11">Peru</option>
+                            <option value="12">Morocco</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Xuất phát</label>
+                        <br>
+                        <input class="blue-border" type="date" name="start-date">
+                    </div>
+                    <div>
+                        <label>Hoàn thành</label>
+                        <br>
+                        <input class="blue-border" type="date" name="end-date">
+                    </div>
+                    <div>
+                        <label>Lượng khách</label>
+                        <br>
+                        <input class="blue-border" type="number" min="1" max="100" value="0" name="tourists">
+                    </div>
+                    <div>
+                        <button class="blue-background white-words" type="submit" name="tour-submit"><i class="fa-solid fa-ticket"></i> Đặt tour</button>
+                    </div>
+                    <div>
+                        <button class="blue-background white-words" type="button" name="open-cart"><i class="fa-solid fa-cart-shopping"></i> Giỏ
+                            hàng</button>
+                    </div>
+                    <div><label></label></div>
+                </formmethod=>
+            </div>
+            <div id="tour-order-img">
+                <img src="airplane-window.jpg" alt="airplane-window">
+            </div>
+        </div>
+        <div id="tour-selected-container">
+            <h1 class="text-center">Vẽ nên hành trình của bạn</h1>
+            <hr class="hr-title">
+            <h1 class="text-center">Chi tiết tour</h1>
+            <hr class="hr-title">
+            <div id="tour-selected-false">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="tour-selected-true">
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour00.webp" alt="tour00">
+                        <section>
+                            <h2 class="blue-words">England</h2>
+                            <p>Bước chân giang hồ, chinh phục xứ sở sương mù</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">2M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4948497.735844269!2d-7.607698366313402!3d52.72752473588747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d0a98a6c1ed5df%3A0xf4e19525332d8ea8!2zQW5oLCBWxrDGoW5nIFF14buRYyBBbmg!5e0!3m2!1svi!2s!4v1729746906681!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Anh, xứ sở của những câu chuyện cổ tích và lịch sử hào hùng, tựa như một giang hồ đầy bí
+                            ẩn, nơi mà các bậc hiệp sĩ từng
+                            dũng cảm chiến đấu vì danh dự và tự do. Từ những tháp đồng hồ Big Ben nổi bật giữa lòng
+                            London cho đến các lâu đài cổ
+                            kính như Windsor, nơi lưu giữ bao kỷ niệm của một thời vàng son, mỗi góc phố đều mang
+                            trong mình những dấu ấn của lịch
+                            sử và văn hóa phong phú. Khung cảnh nông thôn Anh, với những đồng cỏ xanh mướt và các
+                            ngôi làng nhỏ bình yên, như một
+                            bức tranh sống động về cuộc sống giản dị và thanh bình.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Anh, được hình thành từ hàng thế kỷ giao thoa giữa các nền văn minh, như một đại
+                            hội võ lâm nơi mà tài năng và
+                            trí tuệ được tôn vinh. Các lễ hội như Notting Hill Carnival rực rỡ sắc màu, nơi mọi
+                            người cùng nhau nhảy múa và thể hiện
+                            cá tính riêng, tạo nên một không khí đầy phấn khích. Âm nhạc Anh, từ những bản ballad
+                            ngọt ngào đến những giai điệu rock
+                            & roll đầy sức mạnh, như những chiêu thức nghệ thuật thể hiện tâm hồn và sự sáng tạo của
+                            người dân nơi đây.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Anh, mặc dù giản dị nhưng lại đầy hấp dẫn, mang đến cho thực khách những trải
+                            nghiệm thú vị. Món cá và khoai tây
+                            chiên, với lớp vỏ giòn tan và vị béo ngậy, hay món thịt nướng Sunday Roast, đều là những
+                            biểu tượng của ẩm thực nơi đây.
+                            Thưởng thức một tách trà chiều bên khung cảnh yên bình, bạn sẽ cảm nhận được sự giao
+                            thoa giữa truyền thống và hiện đại
+                            trong cuộc sống hàng ngày. Anh, với vẻ đẹp thanh lịch và văn hóa đa dạng, chính là nơi
+                            mà những giấc mơ về cuộc sống ý
+                            nghĩa và phong phú trở thành hiện thực.
+                        </p>
+                        <br>
+                        <button type="button"
+                            class="animate__animated animate__pulse animate__infinite infinite blue-button" onclick="orderTour(1)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour01.webp" alt="tour01">
+                        <section>
+                            <h2 class="blue-words">VietNam</h2>
+                            <p>Việt Nam sơn thủy hữu tình, hành trình tuyệt đỉnh</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">0.9M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15743722.79496086!2d95.23367880582101!3d15.555151669615718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31157a4d736a1e5f%3A0xb03bb0c9e2fe62be!2zVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1729748040300!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Việt Nam, vùng đất của những huyền thoại và cảnh sắc tuyệt đẹp, tựa như một giang hồ kỳ bí,
+                            nơi mà các
+                            anh hùng và những người lữ khách đã viết nên những trang sử hào hùng. Từ những cánh đồng
+                            xanh mướt của
+                            miền Bắc, với hình ảnh những người nông dân cần cù gặt hái mùa màng, đến những bãi biển trải
+                            dài của
+                            miền Trung và miền Nam, nơi sóng vỗ rì rào như lời ca du dương, mọi cảnh sắc nơi đây đều tỏa
+                            sáng vẻ đẹp
+                            độc đáo và sức sống mãnh liệt.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Việt Nam là một bức tranh đa sắc màu, hòa quyện giữa truyền thống và hiện đại. Các
+                            lễ hội như Tết
+                            Nguyên Đán, nơi mọi người sum vầy bên mâm cỗ đầy ắp, như một đại hội võ lâm, tôn vinh tinh
+                            thần đoàn kết
+                            và sự kính trọng đối với tổ tiên. Nghệ thuật dân gian, từ múa rối nước đến nhạc dân tộc,
+                            luôn chạm đến trái
+                            tim của người thưởng thức, như những chiêu thức đầy tài năng và sáng tạo, phản ánh sâu sắc
+                            tâm hồn dân tộc.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Việt Nam, như những bí kíp ẩm thực của các đầu bếp tài ba, mang đến cho thực khách
+                            những trải nghiệm
+                            phong phú và độc đáo. Những món phở thơm ngon, bún chả đầy đặn hay bánh mì giòn rụm, mỗi món
+                            ăn đều chứa
+                            đựng sự kết hợp hoàn hảo giữa hương vị và nguyên liệu tươi ngon. Ngồi bên bàn ăn cùng bạn bè
+                            và gia đình,
+                            thưởng thức các món ngon trong không khí ấm cúng, bạn sẽ cảm nhận được tình yêu và sự gắn
+                            kết của con người
+                            nơi đây. Việt Nam, với cảnh sắc tuyệt đẹp và văn hóa đa dạng, chính là nơi mà những giấc mơ
+                            về cuộc sống
+                            ý nghĩa và phong phú trở thành hiện thực.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button" onclick="orderTour(2)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour02.webp" alt="tour02">
+                        <section>
+                            <h2 class="blue-words">Australia</h2>
+                            <p>Úc châu hiểm địa, truyền kỳ của những bậc kỳ hiệp</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">2.5M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61915712.18271193!2d87.22709473957904!3d-18.707243640182398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2zw5pj!5e0!3m2!1svi!2s!4v1729748082960!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Úc, vùng đất của những kỳ quan thiên nhiên và sự đa dạng văn hóa, tựa như một giang hồ hùng
+                            vĩ, nơi mà
+                            những cuộc phiêu lưu không ngừng khám phá những bí ẩn của đất trời. Từ những bãi biển cát
+                            trắng của Gold
+                            Coast, nơi sóng vỗ dạt dào như những tiếng gọi của biển cả, đến những ngọn núi Blue
+                            Mountains với những
+                            thung lũng sâu thẳm và thác nước đẹp như tranh vẽ, mỗi góc cảnh đều tỏa sáng vẻ đẹp độc đáo
+                            và sự hoang
+                            dã đầy sức sống.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Úc là sự hòa quyện giữa những truyền thống của các bộ lạc thổ dân và những ảnh hưởng
+                            từ các nền
+                            văn hóa khác nhau trên thế giới, tạo nên một bức tranh sống động như một cuộc đại hội võ
+                            lâm. Những lễ hội
+                            như Australia Day và Vivid Sydney mang đến không khí rộn ràng, nơi mà mọi người cùng nhau kỷ
+                            niệm và tôn
+                            vinh bản sắc văn hóa. Âm nhạc và nghệ thuật đường phố cũng như những tác phẩm của các nghệ
+                            sĩ địa phương,
+                            luôn khiến du khách say mê và ngỡ ngàng trước sự sáng tạo vô hạn.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Úc, như những tuyệt kỹ nấu nướng của các đầu bếp tài ba, phản ánh sự đa dạng và tươi
+                            ngon của
+                            nguyên liệu. Những món thịt nướng BBQ thơm lừng, hải sản tươi sống, hay các loại bánh ngọt
+                            phong phú đều
+                            mang đến cho thực khách những trải nghiệm ẩm thực độc đáo. Ngồi bên bữa tiệc ngoài trời,
+                            cùng bạn bè
+                            thưởng thức món ăn trong ánh hoàng hôn vàng rực, bạn sẽ cảm nhận được tinh thần tự do và
+                            niềm vui của cuộc
+                            sống. Úc, với cảnh sắc tuyệt đẹp và nền văn hóa phong phú, chính là nơi mà những lữ khách có
+                            thể tìm thấy
+                            sự bình yên và những câu chuyện kỳ diệu trong cuộc hành trình khám phá.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(3)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour03.webp" alt="tour03">
+                        <section>
+                            <h2 class="blue-words">Maldives</h2>
+                            <p>Đảo trời Maldives, chốn nghỉ ngơi của bậc cao nhân</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">4M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8159114.948605828!2d67.9387751275314!3d3.109824261711689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b599bfaafb7bbd%3A0x414509e181956289!2sMaldives!5e0!3m2!1svi!2s!4v1729748199217!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Maldives, thiên đường giữa đại dương, tựa như một giang hồ lãng mạn nơi mà mọi ước mơ đều
+                            trở thành hiện
+                            thực. Những hòn đảo nhỏ xinh đẹp được bao quanh bởi làn nước turquoise trong xanh như ngọc
+                            bích, và những
+                            bãi cát trắng mịn trải dài như dải lụa, tạo nên cảnh sắc mê hồn khiến mọi du khách đều say
+                            đắm. Những rặng
+                            san hô lung linh và các loài hải sản đa dạng như những báu vật của đại dương, mời gọi các lữ
+                            khách đến khám
+                            phá và hòa mình vào vẻ đẹp nguyên sơ của tự nhiên.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Maldives là sự kết hợp hài hòa giữa ảnh hưởng Ấn Độ, Trung Đông và văn hóa bản địa,
+                            như một đại hội
+                            võ lâm nơi mà truyền thống và hiện đại giao thoa. Những lễ hội như Eid al-Fitr và Ramadan
+                            diễn ra trong
+                            không khí vui tươi, nơi mà người dân cùng nhau cầu nguyện và chúc phúc cho nhau. Nghệ thuật
+                            và âm nhạc
+                            truyền thống cũng giữ một vị trí quan trọng trong đời sống người dân, với những điệu nhảy và
+                            nhạc cụ đặc
+                            trưng tạo nên không khí sôi động, khiến du khách không thể không tham gia.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Maldives, như những bí quyết nấu nướng của các đầu bếp tài ba, mang đến cho thực
+                            khách những hương
+                            vị tươi ngon của biển cả. Các món ăn như mas huni (salad cá ngừ) hay garudhiya (soup cá) kết
+                            hợp hoàn hảo
+                            giữa các nguyên liệu tươi sống, thể hiện sự đơn giản nhưng đầy tinh tế. Thưởng thức bữa ăn
+                            dưới ánh nắng
+                            vàng hoặc trong không gian yên tĩnh bên bờ biển, bạn sẽ cảm nhận được sự kết nối với thiên
+                            nhiên và văn hóa
+                            nơi đây. Maldives, với vẻ đẹp huyền diệu và ẩm thực hấp dẫn, chính là nơi mà những giấc mơ
+                            về một cuộc sống
+                            thanh bình và đầy ý nghĩa trở thành hiện thực.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(4)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour04.jpg" alt="tour04">
+                        <section>
+                            <h2 class="blue-words">France</h2>
+                            <p>Nước Pháp tráng lệ, nơi nên duyên chốn giang hồ</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">1M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11426825.585449714!2d-7.982931039500247!3d45.635711307216766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2zUGjDoXA!5e0!3m2!1svi!2s!4v1729748463616!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Pháp, vùng đất lãng mạn và huyền bí, tựa như một giang hồ thơ mộng, nơi những bậc cao thủ
+                            văn hóa cùng hội
+                            tụ. Từ những con phố cổ kính của Paris, nơi tháp Eiffel kiêu hãnh vươn mình giữa bầu trời,
+                            đến các lâu đài
+                            tráng lệ dọc sông Loire, mỗi góc phố như một chiêu thức bí ẩn, dẫn dắt du khách vào cuộc
+                            hành trình khám phá
+                            vẻ đẹp văn hóa và lịch sử lâu đời. Những buổi hoàng hôn nhuộm đỏ trên dòng Seine tựa như
+                            những hồi ức về
+                            những cuộc tình mãnh liệt, khắc ghi trong tâm trí những lữ khách đam mê khám phá.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Pháp là một tấm gương phản chiếu sự tinh tế và duyên dáng, như các bậc thầy võ lâm
+                            kiêu hãnh khoe
+                            khoang tài năng. Từ nghệ thuật trang trí của các quán cà phê ven đường cho đến những buổi
+                            hòa nhạc cổ điển
+                            tại các nhà hát lớn, mọi khía cạnh của cuộc sống nơi đây đều thấm đẫm hơi thở sáng tạo. Các
+                            lễ hội như
+                            Bastille Day diễn ra rộn ràng, như một đại hội võ lâm, nơi người dân cùng nhau hòa mình vào
+                            không khí phấn
+                            khích, thể hiện niềm tự hào dân tộc.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Pháp, như những chiêu thức tinh tế của các đầu bếp danh tiếng, là một phần không thể
+                            thiếu trong
+                            hành trình khám phá. Những món ăn như bánh mì baguette giòn rụm, phô mai thơm béo, hay những
+                            chiếc bánh
+                            macarons đầy màu sắc, khiến thực khách như lạc vào một trận chiến hương vị đầy mê hoặc. Ngồi
+                            bên ly rượu
+                            vang nồng nàn, thưởng thức bữa ăn trong không khí thanh bình, bạn sẽ cảm nhận được sự hòa
+                            quyện tuyệt vời
+                            giữa thiên nhiên và con người. Pháp, với vẻ đẹp thanh lịch và nền văn hóa phong phú, chính
+                            là nơi mà những
+                            giấc mơ trở thành hiện thực, mời gọi những lữ khách tìm về cuộc sống đích thực của mình.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(5)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour05.webp" alt="tour05">
+                        <section>
+                            <h2 class="blue-words">China</h2>
+                            <p>Lịch sử huy hoàng, kỳ quan Trung Hoa</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">2.7M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27127941.005033504!2d82.75432741177411!3d33.90211085007962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2zVHJ1bmcgUXXhu5Fj!5e0!3m2!1svi!2s!4v1729748511476!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Trung Hoa, vùng đất có bề dày lịch sử và văn hóa, tựa như một giang hồ cổ kính với những bức
+                            tranh sinh động
+                            về phong cảnh hùng vĩ. Từ Vạn Lý Trường Thành trải dài như một thanh kiếm sắc bén cắt ngang
+                            núi rừng, đến
+                            dòng sông Dương Tử uốn lượn như dải lụa mềm mại, mỗi cảnh vật đều mang trong mình những
+                            truyền thuyết và
+                            huyền thoại về các bậc anh hùng. Cảnh sắc nơi đây không chỉ đẹp mà còn chứa đựng những bí ẩn
+                            sâu sắc, khiến
+                            du khách như lạc vào một cuốn tiểu thuyết kiếm hiệp đầy mê hoặc.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Trung Hoa là một kho tàng tri thức và nghệ thuật, nơi các bậc thầy thiền sư, nghệ sĩ
+                            và chiến binh
+                            cùng hiện diện. Các lễ hội như Tết Nguyên Đán và Trung Thu là những dịp để người dân sum
+                            vầy, vui vẻ, như
+                            những đại hội võ lâm, nơi mà tài năng và lòng dũng cảm được tôn vinh. Những điệu múa lân rộn
+                            ràng, những bài
+                            hát truyền thống ngân vang giữa không gian rộng lớn, tựa như những chiêu thức nghệ thuật đầy
+                            sức mạnh, kết
+                            nối tâm hồn người dân với văn hóa tổ tiên.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Trung Hoa, như những tuyệt kỹ nấu nướng tinh xảo, mang đến cho thực khách một hành
+                            trình vị giác
+                            không thể quên. Những món ăn như dim sum nhỏ xinh, bánh bao nóng hổi hay mì kéo thủ công,
+                            mỗi món ăn đều
+                            mang trong mình sự hòa quyện của hương vị và nghệ thuật chế biến. Thưởng thức bữa tiệc trong
+                            không khí ấm
+                            cúng của gia đình, bạn sẽ cảm nhận được sức mạnh của ẩm thực trong việc gắn kết con người
+                            với nhau. Trung
+                            Hoa, với cảnh đẹp tráng lệ và văn hóa phong phú, chính là nơi mà những giấc mơ về cuộc sống
+                            bình yên và ý
+                            nghĩa trở thành hiện thực.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(6)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour06.jpg" alt="tour06">
+                        <section>
+                            <h2 class="blue-words">The USA</h2>
+                            <p>Mỹ Quốc thịnh vượng, vang danh tứ phương</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">3.6M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52891323.643556565!2d-161.7572472789203!3d35.99024145578047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2zSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1729748584974!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Hoa Kỳ, vùng đất của những giấc mơ, tựa như một giang hồ hiện đại, nơi những bậc anh hùng từ
+                            khắp nơi trên
+                            thế giới tìm đến để khám phá vận mệnh của mình. Từ những thành phố nhộn nhịp như New York,
+                            với những tòa nhà
+                            chọc trời như những thanh kiếm vươn cao, đến vẻ đẹp hùng vĩ của Grand Canyon, nơi thiên
+                            nhiên bày biện một
+                            bức tranh kỳ diệu, mỗi góc cạnh đều mang trong mình những câu chuyện về sự kiên cường và
+                            khát vọng tự do.
+                            Cảnh sắc nơi đây đa dạng như các môn phái võ lâm, khiến mỗi lữ khách đều cảm thấy hào hứng
+                            và đầy mong đợi.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Hoa Kỳ là sự giao thoa của nhiều nền văn hóa khác nhau, như một đại hội võ lâm, nơi
+                            mọi người có thể
+                            tỏa sáng với tài năng và phong cách riêng. Các lễ hội như Lễ Tạ Ơn và 4/7 đều diễn ra trong
+                            không khí tưng
+                            bừng, nơi mà những tiếng cười và niềm vui hòa quyện thành một bản giao hưởng rực rỡ. Âm nhạc
+                            từ jazz, blues
+                            cho đến rock và hip-hop như những chiêu thức đặc sắc của từng môn phái, thể hiện cá tính và
+                            sự sáng tạo của
+                            người dân nơi đây.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Hoa Kỳ là một bức tranh đa màu sắc, phản ánh sự đa dạng văn hóa của đất nước. Từ
+                            những chiếc burger
+                            nướng thơm phức, pizza kiểu New York đến các món BBQ đầy hấp dẫn, mỗi món ăn đều mang đến
+                            cho thực khách một
+                            hành trình khám phá hương vị độc đáo. Những bữa tiệc ngoài trời, nơi bạn bè quây quần bên
+                            nhau, thưởng thức
+                            đồ ăn ngon và chia sẻ câu chuyện, như những trận chiến đấu vui vẻ giữa các môn phái trong
+                            giang hồ. Hoa Kỳ,
+                            với vẻ đẹp phong phú và tinh thần tự do, chính là nơi mà mọi người có thể theo đuổi đam mê
+                            và tìm kiếm hạnh
+                            phúc trong cuộc sống.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(7)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour07.jpg" alt="tour07">
+                        <section>
+                            <h2 class="blue-words">Japan</h2>
+                            <p>Samurai phiêu bạt, lạc bước xứ Phù Tang</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">3M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27816364.25988382!2d115.70711454360831!3d31.673466753659003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zTmjhuq10IELhuqNu!5e0!3m2!1svi!2s!4v1729748619892!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Nhật Bản, xứ sở của những truyền thuyết và vẻ đẹp thơ mộng, tựa như một giang hồ cổ kính,
+                            nơi mà những
+                            samurai kiêu hãnh và các bậc thầy nghệ thuật sống trong sự hòa quyện của thiên nhiên và văn
+                            hóa. Từ những
+                            ngọn núi Phú Sĩ hùng vĩ, đứng lặng giữa bầu trời trong xanh như một biểu tượng của sức mạnh
+                            và sự kiên trì,
+                            đến các khu vườn Zen thanh tĩnh, nơi dòng suối chảy róc rách như những âm thanh du dương của
+                            cuộc sống, mọi
+                            cảnh sắc đều mang lại cảm giác bình yên và sâu lắng.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Nhật Bản là một bức tranh đa dạng, với các truyền thống và lễ hội phong phú. Tết
+                            Hanami ngập tràn
+                            sắc hoa anh đào, như một cuộc hội ngộ của các môn phái trong võ lâm, nơi mọi người cùng nhau
+                            ngắm nhìn vẻ
+                            đẹp mong manh và ngắn ngủi của hoa nở. Những buổi trà đạo thanh tao, nơi mà sự tĩnh lặng và
+                            thanh nhã được
+                            thể hiện trong từng động tác, như một chiêu thức tinh tế, mang đến cho người tham gia cảm
+                            giác hòa quyện với
+                            tự nhiên và tâm hồn.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Nhật Bản, như những tuyệt kỹ nấu nướng của các bậc thầy ẩm thực, không chỉ là thức
+                            ăn mà còn là nghệ
+                            thuật. Những món sushi tươi ngon, ramen đậm đà hay những bát miso nóng hổi đều mang đến cho
+                            thực khách trải
+                            nghiệm đầy mê hoặc. Mỗi bữa ăn như một hành trình khám phá hương vị và sự tinh tế, khiến
+                            người thưởng thức
+                            không chỉ hài lòng về cái bụng mà còn cảm nhận được vẻ đẹp trong từng món ăn. Nhật Bản, với
+                            cảnh sắc tráng
+                            lệ, văn hóa phong phú và ẩm thực tuyệt hảo, chính là nơi mà những giấc mơ về cuộc sống bình
+                            yên và đầy ý
+                            nghĩa trở thành hiện thực.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(8)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour08.webp" alt="tour08">
+                        <section>
+                            <h2 class="blue-words">Iceland</h2>
+                            <p>Chốn cực quang, nhân sinh cực mỹ</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">2.5M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482278.901116267!2d-24.520237123288908!3d64.775405789595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d22b52a3eb6043%3A0x6f8a0434e5c1459a!2sIceland!5e0!3m2!1svi!2s!4v1729748665574!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Iceland, xứ sở của băng và lửa, tựa như một giang hồ kỳ bí giữa đại dương bao la, nơi những
+                            kiếm khách dũng
+                            cảm khám phá vẻ đẹp nguyên sơ và hùng vĩ của thiên nhiên. Những ngọn núi lửa hoạt động mạnh
+                            mẽ và các thác
+                            nước đổ xuống như những dòng kiếm khí, tạo nên khung cảnh ngoạn mục mà ít nơi nào có được.
+                            Từ cánh đồng băng
+                            Vatnajökull rộng lớn cho đến các suối nước nóng tự nhiên, Iceland mang đến cho du khách cảm
+                            giác như đang
+                            bước vào một thế giới thần thoại đầy kỳ diệu.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Iceland là sự hòa quyện giữa các truyền thống cổ xưa và cuộc sống hiện đại, như
+                            những bậc thầy võ
+                            lâm không ngừng rèn luyện và sáng tạo. Những lễ hội như Þorrablót, nơi người dân tụ họp để
+                            tưởng nhớ và
+                            thưởng thức các món ăn truyền thống, như một đại hội võ lâm, tôn vinh văn hóa và bản sắc dân
+                            tộc. Âm nhạc và
+                            văn học cũng là phần quan trọng trong đời sống nơi đây, với những tác phẩm mang đậm dấu ấn
+                            văn hóa dân gian,
+                            khiến người thưởng thức như lạc vào một cuộc hành trình khám phá tâm hồn và tâm tư của dân
+                            tộc.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Iceland, dù giản dị nhưng lại chứa đựng những bí quyết nấu nướng độc đáo, phản ánh
+                            cuộc sống gần gũi
+                            với thiên nhiên. Những món ăn từ hải sản tươi ngon, thịt cừu nướng, hay món skyr dày đặc và
+                            béo ngậy, như
+                            những chiêu thức tinh tế của các đầu bếp tài ba, khiến thực khách cảm nhận được hương vị
+                            thuần khiết của đất
+                            trời. Thưởng thức một bữa ăn bên ánh sáng bắc cực quang lung linh, bạn sẽ cảm nhận được sự
+                            hòa quyện giữa
+                            con người và thiên nhiên, giữa cái đẹp và sự hoang sơ. Iceland, với vẻ đẹp kỳ diệu và nền
+                            văn hóa phong phú,
+                            chính là nơi mà những lữ khách có thể tìm thấy sự bình yên và niềm cảm hứng trong cuộc sống.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(9)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour09.png" alt="tour09">
+                        <section>
+                            <h2 class="blue-words">Italy</h2>
+                            <p>Dấu tích La Mã, nơi quy tụ của những lãng tử</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">2M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12367353.697823416!2d2.1183282868056277!3d40.81975990771307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2zw50!5e0!3m2!1svi!2s!4v1729748708076!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Italy, xứ sở của nghệ thuật và ẩm thực, tựa như một giang hồ lãng mạn, nơi mà những bậc thầy
+                            sáng tạo từ mọi
+                            thời đại đã để lại dấu ấn không thể phai mờ. Từ những con phố cổ của Rome, nơi có Đấu trường
+                            La Mã hùng vĩ
+                            như một thanh kiếm sắt bén ghi lại những cuộc chiến oai hùng, đến những kênh rạch lãng mạn
+                            của Venice, nơi
+                            những chiếc thuyền gondola nhẹ nhàng lướt qua như những bức tranh sống động, cảnh sắc nơi
+                            đây mê hoặc du
+                            khách ngay từ lần đầu đặt chân.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Italy là một bức tranh phong phú với những truyền thống và lễ hội độc đáo, như một
+                            cuộc đại hội võ
+                            lâm nơi mà tài năng và lòng tự hào được tôn vinh. Lễ hội Carnival ở Venice, với những chiếc
+                            mặt nạ rực rỡ và
+                            những bộ trang phục cầu kỳ, là một cuộc hội ngộ đầy màu sắc, nơi mà mọi người cùng nhau đắm
+                            chìm trong âm
+                            nhạc và điệu nhảy, tạo nên không khí vui tươi và phấn khởi. Nghệ thuật, từ hội họa đến điêu
+                            khắc, đều mang
+                            dấu ấn của những thiên tài như Michelangelo và Da Vinci, khiến người thưởng thức cảm nhận
+                            được vẻ đẹp trác
+                            tuyệt của nhân loại.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Italy, như những chiêu thức bí truyền của các đầu bếp lừng danh, mang đến cho thực
+                            khách một hành
+                            trình vị giác phong phú. Những món pasta thơm ngon, pizza giòn rụm, hay các món hải sản tươi
+                            sống đều là
+                            những tác phẩm nghệ thuật trong bữa tiệc ẩm thực. Ngồi bên bàn ăn, thưởng thức những món
+                            ngon trong không
+                            khí ấm cúng cùng bạn bè và gia đình, bạn sẽ cảm nhận được sức mạnh của ẩm thực trong việc
+                            gắn kết con người
+                            lại với nhau. Italy, với vẻ đẹp lịch sử và văn hóa phong phú, chính là nơi mà những giấc mơ
+                            về cuộc sống đầy
+                            sắc màu trở thành hiện thực.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(10)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour10.webp" alt="tour10">
+                        <section>
+                            <h2 class="blue-words">Peru</h2>
+                            <p>Đỉnh núi Machu Picchu, hào kiệt vọng về quá khứ</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">180$</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16138226.204068946!2d-85.70544282573306!3d-9.064070116614802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2sPeru!5e0!3m2!1svi!2s!4v1729748741090!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Peru, xứ sở của những kỳ quan thiên nhiên và nền văn hóa phong phú, tựa như một giang hồ bí
+                            ẩn, nơi những
+                            chiến binh Inca một thời vẫn còn sống mãi trong huyền thoại. Từ đỉnh núi Machu Picchu hùng
+                            vĩ, như một ngọn
+                            núi đao vươn cao giữa mây trời, đến các dòng sông Amazon cuồn cuộn chảy, nơi mà sự sống luôn
+                            tràn đầy sức
+                            mạnh, mỗi cảnh vật đều mang trong mình những câu chuyện huyền bí về các nền văn minh cổ đại.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Peru là sự kết hợp tinh tế giữa các truyền thống bản địa và ảnh hưởng của các nền
+                            văn hóa khác, như
+                            một đại hội võ lâm nơi mà mọi giá trị đều được tôn vinh. Những lễ hội truyền thống như Inti
+                            Raymi, lễ hội
+                            tôn vinh thần mặt trời, diễn ra với những điệu múa rộn ràng và trang phục rực rỡ, khiến du
+                            khách như lạc vào
+                            một thế giới kỳ diệu. Nghệ thuật thêu dệt và gốm sứ của người Peru không chỉ là những tác
+                            phẩm nghệ thuật,
+                            mà còn chứa đựng tâm hồn và câu chuyện của một dân tộc.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Peru, như những chiêu thức độc đáo của các đầu bếp tài hoa, mang đến cho thực khách
+                            những trải
+                            nghiệm ẩm thực không thể quên. Món ceviche tươi ngon, với cá tươi sống và nước chanh, hòa
+                            quyện hương vị
+                            biển cả và đất trời, là biểu tượng của nền ẩm thực nơi đây. Các món ăn khác như lomo saltado
+                            hay ají de
+                            gallina cũng đầy hấp dẫn, khiến bạn như lạc vào một cuộc chiến đấu giữa các hương vị phong
+                            phú. Peru, với
+                            cảnh sắc thiên nhiên tuyệt đẹp và văn hóa đa dạng, chính là nơi mà những giấc mơ về cuộc
+                            sống phong phú và ý
+                            nghĩa trở thành hiện thực.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(11)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="blue-border">
+                        <img src="tour11.jpg" alt="tour11">
+                        <section>
+                            <h2 class="blue-words">Morocco</h2>
+                            <p>Ma-rốc sa mạc, anh hùng phiêu bạt giữa trời cát vàng</p>
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><span class="cash blue-words">1.5M VNĐ</span></p>
+                        </section>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6952052.648884886!2d-12.443425985848242!3d31.700677585112427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMaroc!5e0!3m2!1svi!2s!4v1729748772438!5m2!1svi!2s"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="blue-border">
+                        </iframe>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ma-rốc, vùng đất huyền bí của Bắc Phi, tựa như một giang hồ cổ xưa, nơi những thương nhân và
+                            kẻ lãng du từng
+                            qua lại giữa những cồn cát vàng và các ngọn núi Atlas hùng vĩ. Từ những thành phố sôi động
+                            như Marrakech với
+                            các chợ phiên nhộn nhịp, nơi những mùi hương của gia vị và trà bạc hà hòa quyện trong không
+                            khí, đến những
+                            bãi biển xanh biếc của Agadir, cảnh sắc nơi đây như một bức tranh sống động đầy màu sắc và
+                            sức sống.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Văn hóa Ma-rốc là sự pha trộn của nhiều nền văn minh, như một đại hội võ lâm nơi mà mỗi
+                            truyền thống đều có
+                            giá trị riêng. Những lễ hội như Festival Gnaoua tại Essaouira mang đến những điệu nhảy đầy
+                            cảm hứng và âm
+                            nhạc truyền thống, khiến du khách như bị cuốn hút vào một không gian đầy sắc màu. Kiến trúc
+                            độc đáo của các
+                            thành phố cổ, với các bức tường gạch và những khu phố nhỏ hẹp, kể lại câu chuyện về quá khứ
+                            huy hoàng và sự
+                            giao thoa văn hóa qua hàng thế kỷ.
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-plane"></i>
+                            Ẩm thực Ma-rốc, như những tuyệt kỹ ẩm thực của các đầu bếp tài ba, là một hành trình vị giác
+                            phong phú và
+                            độc đáo. Món tagine nấu chậm, với hương vị đậm đà của thịt và rau củ, hay couscous mềm mịn,
+                            đều mang đến cho
+                            thực khách những trải nghiệm khó quên. Những bữa ăn truyền thống thường diễn ra trong không
+                            khí ấm cúng, nơi
+                            mọi người quây quần bên nhau, chia sẻ niềm vui và hương vị. Ma-rốc, với vẻ đẹp hoang sơ và
+                            văn hóa phong
+                            phú, chính là nơi mà những lữ khách tìm thấy sự bình yên và những câu chuyện kỳ diệu trong
+                            cuộc sống.
+                        </p>
+                        <br>
+                        <button type="button" class="animate__animated animate__pulse animate__infinite infinite blue-button"  onclick="orderTour(12)">Đặt
+                            ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tour-list-container">
+            <h1 class="text-center">Danh sách hành trình</h1>
+            <hr class="hr-title">
+            <div id="tour-list-details">
+                <div class="white-background blue-border" onclick="selectTour(0)">
+                    <img src="tour00.webp" alt="tour00">
+                    <section>
+                        <h2 class="blue-words">England</h2>
+                        <p>Bước chân giang hồ, chinh phục xứ sở sương mù</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">2M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(1)">
+                    <img src="tour01.webp" alt="tour01">
+                    <section>
+                        <h2 class="blue-words">VietNam</h2>
+                        <p>Việt Nam sơn thủy hữu tình, hành trình tuyệt đỉnh</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">0.9M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(2)">
+                    <img src="tour02.webp" alt="tour02">
+                    <section>
+                        <h2 class="blue-words">Australia</h2>
+                        <p>Úc châu hiểm địa, truyền kỳ của những bậc kỳ hiệp</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">2.5M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(3)">
+                    <img src="tour03.webp" alt="tour03">
+                    <section>
+                        <h2 class="blue-words">Maldives</h2>
+                        <p>Đảo trời Maldives, chốn nghỉ ngơi của bậc cao nhân</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">4M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(4)">
+                    <img src="tour04.jpg" alt="tour04">
+                    <section>
+                        <h2 class="blue-words">France</h2>
+                        <p>Nước Pháp tráng lệ, nơi nên duyên chốn giang hồ</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">1M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(5)">
+                    <img src="tour05.webp" alt="tour05">
+                    <section>
+                        <h2 class="blue-words">China</h2>
+                        <p>Lịch sử huy hoàng, kỳ quan Trung Hoa</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">2.7M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(6)">
+                    <img src="tour06.jpg" alt="tour06">
+                    <section>
+                        <h2 class="blue-words">The USA</h2>
+                        <p>Mỹ Quốc thịnh vượng, vang danh tứ phương</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">3.6M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(7)">
+                    <img src="tour07.jpg" alt="tour07">
+                    <section>
+                        <h2 class="blue-words">Japan</h2>
+                        <p>Samurai phiêu bạt, lạc bước xứ Phù Tang</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">3M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(8)">
+                    <img src="tour08.webp" alt="tour08">
+                    <section>
+                        <h2 class="blue-words">Iceland</h2>
+                        <p>Chốn cực quang, nhân sinh cực mỹ</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">2.5M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(9)">
+                    <img src="tour09.png" alt="tour09">
+                    <section>
+                        <h2 class="blue-words">Italy</h2>
+                        <p>Dấu tích La Mã, nơi quy tụ của những lãng tử</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">2M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(10)">
+                    <img src="tour10.webp" alt="tour10">
+                    <section>
+                        <h2 class="blue-words">Peru</h2>
+                        <p>Đỉnh núi Machu Picchu, hào kiệt vọng về quá khứ</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">1.8M VNĐ</span></p>
+                    </section>
+                </div>
+                <div class="white-background blue-border" onclick="selectTour(11)">
+                    <img src="tour11.jpg" alt="tour11">
+                    <section>
+                        <h2 class="blue-words">Morocco</h2>
+                        <p>Ma-rốc sa mạc, anh hùng phiêu bạt giữa trời cát vàng</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+                        <p class="text-right"><span class="cash blue-words">1.5M VNĐ</span></p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="gray-background">
+            <ul>
+                <li>
+                    <p><b>Địa chỉ: </b>123 đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ, Việt
+                        Nam</p>
+                </li>
+                <li>
+                    <p><b>Điện thoại: </b>0292999999</p>
+                </li>
+                <li>
+                    <p><b>Email: </b>supertrip@gmail.com.vn</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p><i class="fa-brands fa-tiktok"></i> @supertrip123</p>
+                </li>
+                <li>
+                    <p><i class="fa-brands fa-facebook"></i> SuperTrip Company</p>
+                </li>
+                <li>
+                    <p><i class="fa-brands fa-youtube"></i> SuperTrip Vlog</p>
+                </li>
+            </ul>
+            <img src="back-to-top.png" alt="back-to-top" />
+        </div>
+        <div class="blue-background white-words">
+            <p>
+                <b>Bản quyền: </b>© 2024 Công ty Du Lịch SuperTrip. Tất cả các quyền
+                được bảo lưu.
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>

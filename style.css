@@ -1,0 +1,1300 @@
+/*Lobster (<span>)*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Quicksand (<h1>)*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Nunito Sans (<h2> <inphut>) */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Noto sans (<p> <label> <button>)*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ----------CHUNG---------- */
+body {
+    margin: 0px;
+}
+
+* {
+    transition: all 0.5s ease;
+}
+
+/* Phông chữ */
+h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    z-index: 2;
+}
+
+h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    z-index: 2;
+
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    z-index: 2;
+}
+
+a {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+label {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    font-family: "Lobster", sans-serif;
+    font-size: 32px;
+    text-align: right;
+}
+
+.hidden {
+    align-self: flex-start;
+    font-size: bold;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.blue-words {
+    color: #0056b3;
+}
+
+.white-words {
+    color: white;
+}
+
+.gray-words {
+    color: rgb(80, 80, 80);
+}
+
+.red-words {
+    color: red;
+}
+
+.hr-title {
+    background-color: #0056b3;
+    margin-top: -3px;
+    height: 1.5px;
+    width: 100px;
+}
+
+/* Viền xanh */
+.blue-border {
+    border: solid #0056b3 3px;
+}
+
+/* Màu nền*/
+.blue-background {
+    background-color: #0056b3;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.gray-background {
+    background-color: #aaaa;
+}
+
+/* Lớp phủ tối */
+.form-normal,
+div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.dark-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Font awesome */
+.fa-bars {
+    cursor: pointer;
+    display: none;
+}
+
+.fa-bars:hover {
+    transform: rotate(90deg);
+}
+
+.fa-plane {
+    color: #0056b3;
+}
+
+.fa-star {
+    color: gold;
+}
+
+.fa-minus {
+    color: red;
+}
+
+.fa-plus {
+    color: green;
+}
+
+.fa-trash {
+    padding: 7px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Nút */
+button {
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.animate__pulse {
+    margin-top: 20px;
+    height: 60px;
+    width: 200px;
+    backdrop-filter: blur(8px);
+    border-radius: 50px;
+    --animate-duration: 1.5s;
+}
+
+.blue-button {
+    color: #0056b3;
+    border: solid 3px #0056b3;
+}
+
+.blue-button:hover {
+    color: white;
+    background-color: #0056b3;
+}
+
+.blue-button:active {
+    background-color: #00479e;
+}
+
+.white-button {
+    color: white;
+    border: solid 3px white;
+}
+
+.white-button:hover {
+    background-color: #0056b3;
+}
+
+.white-button:active {
+    background-color: #00479e;
+}
+
+/* Đăng nhập, đăng ký, liên hệ */
+#login {
+    background-image: url('new-york-city.jpg');
+}
+
+#signup {
+    background-image: url('ha-long-bay.jpg');
+}
+
+#contact {
+    background-image: url('sakura.jpg');
+}
+
+.form-normal {
+    z-index: 0;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-normal form {
+    border-radius: 20px;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    backdrop-filter: blur(8px);
+}
+
+.form-normal fieldset {
+    padding: 20px;
+    border: white solid 2px;
+    border-radius: 20px;
+}
+
+.form-normal div {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.form-normal [type="text"],
+.form-normal [type="password"] {
+    text-indent: 10px;
+    font-size: 15px;
+    width: 290px;
+    height: 35px;
+    color: white;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 30px;
+}
+
+.form-normal textarea {
+    resize: none;
+    text-indent: 30px;
+    font-size: 15px;
+    width: 290px;
+    height: 100px;
+    color: white;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+.form-normal input+i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.form-normal textarea+i {
+    position: absolute;
+    top: 4%;
+    left: 12px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+}
+
+.form-normal button {
+    margin: 10px 0;
+    width: 290px;
+    height: 35px;
+    color: white;
+    border: solid white 1px;
+    border-radius: 30px;
+    transition: all.5s ease;
+}
+
+/* Header */
+nav {
+    z-index: 3;
+    margin-top: -8px;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+}
+
+nav li {
+    margin-left: 8px;
+}
+
+nav div:nth-child(1) {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+nav div:nth-child(2) {
+    cursor: pointer;
+    visibility: hidden;
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+nav ul {
+    margin: 8px 18px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    padding: 5px;
+    border-radius: 20px;
+}
+
+nav section {
+    cursor: pointer;
+    margin-right: -200px;
+    background-color: rgb(111, 111, 111);
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    top: 38px;
+    min-height: 200px;
+    width: 200px;
+}
+
+nav section a {
+    padding: 18px 0px;
+    border-bottom: white solid 2px;
+    text-decoration: none;
+}
+
+nav div:nth-child(2):hover,
+nav section a:hover,
+.link:hover {
+    background-color: #555;
+}
+
+nav div:nth-child(2):active,
+nav section a:active,
+.link:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div:nth-child(1) img {
+    margin-bottom: 12px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+footer div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+/* ----------TRANG-CHỦ-----------*/
+/* Slogan */
+#slogan-container {
+    margin-bottom: 70px;
+    background-image: url('paris.jpg');
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slogan-content {
+    z-index: 2;
+}
+
+/* Tin tức */
+.news-title {
+    margin: 30px 5% 0 5%;
+    width: 90%;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.news-title section {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#news-top {
+    min-height: 600px;
+    margin: 10px 5% 30px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#news-top div {
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#news-top section {
+    margin: 10px 3%;
+    z-index: 2;
+}
+
+#news-top div:hover {
+    transform: scale(98%);
+    z-index: 2;
+}
+
+#news-top div:nth-child(1) {
+    background-image: url('dalat.jpg');
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+#news-top div:nth-child(2) {
+    background-image: url('chefchaouen.jpg');
+}
+
+#news-top div:nth-child(3) {
+    background-image: url('stadiums.jpg');
+}
+
+#news-bottom {
+    margin: 0px 5% 70px 5%;
+}
+
+#news-bottom div {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    z-index: 1;
+}
+
+#news-bottom div:hover {
+    transform: scale(98%);
+    z-index: 2;
+}
+
+#news-bottom img {
+    margin: 1% 0 1% 1%;
+    width: 40%;
+    height: 500px;
+}
+
+#news-bottom section {
+    width: 50%;
+    height: 100%;
+}
+
+/* Địa điểm phổ biến */
+#popular-img {
+    margin: 30px 10% 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+#popular-img div {
+    border-radius: 50px;
+    height: 650px;
+    cursor: pointer;
+}
+
+#popular-img div::before {
+    content: "";
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+#popular-img div:hover::before {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popular-img div:nth-child(1) {
+    background-image: url('london.jpg');
+}
+
+#popular-img div:nth-child(2) {
+    background-image: url('san-francisco.jpg');
+}
+
+#popular-img div:nth-child(3) {
+    background-image: url('beijing.jpg');
+}
+
+#popular-img section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+    margin: 5% 0 0 5%;
+    z-index: 2;
+}
+
+#popular-img hr {
+    margin: 0;
+    width: 70px;
+    height: 2px;
+    top: 7%;
+    border: none;
+    z-index: 2;
+}
+
+/* Trích dẫn */
+#quote-container {
+    margin: 100px 0 70px 0;
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+#quote-img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: #0056b3 solid 4px;
+    padding: 10px;
+}
+
+#quote-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Câu chuyện */
+#story-container {
+    margin: 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#story-video video {
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+/* ---------TRANG-GIỚI-THIỆU--------- */
+/* Công ty */
+#company-container {
+    margin-bottom: 70px;
+    background-image: url('company.webp');
+    width: 100%;
+    min-height: 700px;
+    background-position: center 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#company-container div {
+    margin: 70px 5% 0px 5%;
+    width: 40%;
+    z-index: 2;
+}
+
+#company-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#company-container hr {
+    border-width: 2px;
+}
+
+/*Dịch vụ */
+#service-details {
+    margin: 30px 10% 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 10px;
+}
+
+#service-details div {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#service-details div:first-child {
+    grid-row: 1/3;
+    background-image: url('china-wall.jpg');
+}
+
+#service-details div:nth-child(2),
+#service-details div:nth-child(3),
+#service-details div:nth-child(4),
+#service-details div:nth-child(5) {
+    padding-bottom: 100px;
+}
+
+#service-details img {
+    width: 40%;
+    height: 40%;
+}
+
+/* Thống kê */
+#statistic-details {
+    margin: 0 10% 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Lãnh đạo */
+#manager-profile {
+    margin: 30px 5% 70px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#manager-profile div {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 5px;
+}
+
+#manager-profile section {
+    margin: 0 5%;
+}
+
+#manager-profile img {
+    margin-top: 20px;
+    width: 40%;
+    height: 120px;
+    border-radius: 50%;
+    border: #0056b3 solid 4px;
+    padding: 10px;
+}
+
+/* Chính sách */
+#policy-details {
+    margin: 30px 5% 70px 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#policy-details div {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#policy-details div i {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#policy-details ul {
+    margin: 0;
+    list-style-type: disc;
+}
+
+/* Lịch sử */
+#history-details {
+    margin: 0px 10% 70px 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------TRANG-SẢN-PHẨM---------- */
+/* Đặt tour */
+#tour-order-container {
+    margin-bottom: 70px;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tour-order-form {
+    z-index: 1;
+}
+
+#tour-order-form form {
+    z-index: 1;
+    padding: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px 10px;
+    color: black;
+}
+
+#tour-order-form input {
+    width: 112px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+#tour-order-form select {
+    width: 112px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#tour-order-form button {
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+#tour-order-form button:hover {
+    background-color: #00479e;
+}
+
+#tour-order-form form div:last-child {
+    grid-column: 1/5;
+    grid-row: 3;
+}
+
+#tour-order-img {
+    z-index: 0;
+    transform: translate(-10%, 0);
+}
+
+#tour-order-img img {
+    border-radius: 30%;
+    height: 500px;
+}
+
+/* Xem tour (Chưa chọn tour) */
+#tour-selected-false {
+    height: 1000px;
+    margin: 30px 5% 70px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#tour-selected-false div:nth-child(1) {
+    background-image: url('tour-selected-false-1.webp');
+    grid-column: 1/3;
+    background-position: center 40%;
+}
+
+#tour-selected-false div:nth-child(2) {
+    background-image: url('tour-selected-false-2.jpg');
+    grid-column: 3;
+    grid-row: 1/4;
+}
+
+#tour-selected-false div:nth-child(3) {
+    background-image: url('tour-selected-false-3.webp');
+    grid-row: 2/4;
+}
+
+#tour-selected-false div:nth-child(4) {
+    background-image: url('tour-selected-false-4.jpg');
+}
+
+#tour-selected-false div:nth-child(5) {
+    background-image: url('tour-selected-false-5.jpg');
+}
+
+#tour-selected-false div:nth-child(6) {
+    background-image: url('tour-selected-false-6.jpg');
+}
+
+#tour-selected-false div:nth-child(7) {
+    background-image: url('tour-selected-false-7.jpg');
+    grid-column: 2/4;
+}
+
+/* Xem tour (Đã chọn tour) */
+#tour-selected-container h1:nth-child(3),
+#tour-selected-container hr:nth-child(4) {
+    display: none;
+}
+
+#tour-selected-true {
+    margin: 30px 5% 70px 5%;
+}
+
+.animate__fadeIn {
+    display: none;
+    grid-template-columns: 35% 55%;
+    grid-template-rows: repeat(2, 450px);
+    gap: 50px;
+    border-radius: 20px;
+}
+
+.animate__fadeIn div:nth-child(1) {
+    border-radius: 20px;
+}
+
+.animate__fadeIn div:nth-child(2) {
+    grid-row: 2;
+    border-radius: 20px;
+}
+
+.animate__fadeIn div:nth-child(3) {
+    grid-column: 2/4;
+    grid-row: 1/4;
+    margin-top: 20px;
+}
+
+.animate__fadeIn section {
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#tour-selected-true iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#tour-selected-true img {
+    border-radius: 18px 18px 0 0;
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+/* Danh sách tour */
+#tour-list-details {
+    margin: 30px 5% 70px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 10px;
+}
+
+#tour-list-details div {
+    cursor: pointer;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+#tour-list-details div:hover {
+    transform: scale(108%);
+    z-index: 2;
+}
+
+#tour-list-details img {
+    border-radius: 18px 18px 0 0;
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+#tour-list-details section {
+    margin: 0 2%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cash {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+/* ----------TRANG-GIỎ-HÀNG---------- */
+/* Giỏ hàng */
+#cart {
+    min-height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-table {
+    margin: 70px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 600px;
+}
+
+/* Tiêu đề */
+#cart-table-head {
+    margin: 0 10px 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: solid black 1.5px;
+}
+
+/* Chi tiết đơn hàng */
+.tour {
+    margin: 0 10px 20px 10px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: solid black 1.5px;
+}
+
+.tour img {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.tour button {
+    border: none;
+    font-size: 20px;
+}
+
+/* Chi phí đơn hàng */
+#cart-table-foot {
+    margin: 0 10px 20px 10px;
+    padding: 10px 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#cart-table-foot button {
+    margin-left: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 50px;
+}
+
+/* ----------Media-Queries---------- */
+@media (max-width :1000px) {
+    #story-container {
+        grid-template-columns: 1fr;
+    }
+
+    #tour-selected-false {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+
+    #tour-selected-false div:nth-child(1) {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background-position: center 30%;
+    }
+
+    #tour-selected-false div:nth-child(2) {
+        grid-column: 2;
+        grid-row: 3/7;
+    }
+
+    #tour-selected-false div:nth-child(3) {
+        grid-row: 3/5;
+    }
+
+    #tour-selected-false div:nth-child(4) {
+        grid-column: 2;
+        grid-row: 7/9;
+    }
+
+    #tour-selected-false div:nth-child(5) {
+        grid-row: 7/9;
+    }
+
+    #tour-selected-false div:nth-child(6) {
+        grid-row: 5/7;
+    }
+
+    #tour-selected-false div:nth-child(7) {
+        grid-row: 9/11;
+        grid-column: 1/3;
+    }
+
+    .animate__fadeIn {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 360px auto;
+        gap: 100px 20px;
+    }
+
+    .animate__fadeIn div:nth-child(1) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .animate__fadeIn div:nth-child(2) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .animate__fadeIn div:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+
+    #tour-list-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .link,
+    .wall {
+        display: none;
+    }
+
+    .fa-bars {
+        display: flex;
+    }
+
+    #news-top {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #news-top div:nth-child(1) {
+        grid-row: 1/3;
+        grid-column: 1/3;
+    }
+
+    #news-bottom div {
+        flex-direction: column;
+    }
+
+    #news-bottom img {
+        width: 90%;
+    }
+
+    #manager-profile {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #service-details {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #service-details div:first-child {
+        grid-column: 1/3;
+        background-position: center;
+    }
+
+    #tour-order-img {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    #popular-img {
+        margin: 30px 20% 70px 20%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #company-container {
+        flex-direction: column;
+    }
+
+    #company-container div {
+        width: 60%;
+    }
+
+    #statistic-container div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .animate__fadeIn {
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px auto 400px;
+        gap: 20px;
+    }
+
+    .animate__fadeIn div:nth-child(1) {
+        max-width: 350px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .animate__fadeIn div:nth-child(2) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .animate__fadeIn div:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+}
+
+@media (max-width :600px) {
+    #service-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px repeat(4, auto);
+    }
+
+    #service-details div:first-child {
+        grid-column: 1/1;
+    }
+
+    #policy-details {
+        margin: 30px 5% 0 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #manager-profile {
+        grid-template-columns: 1fr;
+    }
+
+    #tour-order-form form {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #tour-order-form form div:last-child {
+        grid-row: 4;
+        grid-column: 1/3;
+    }
+
+    #tour-selected-false {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    #tour-selected-false div:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+        background-position: center 30%;
+    }
+
+    #tour-selected-false div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #tour-selected-false div:nth-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #tour-selected-false div:nth-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #tour-selected-false div:nth-child(5) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #tour-selected-false div:nth-child(6) {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #tour-selected-false div:nth-child(7) {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    #tour-list-details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    nav div:nth-child(2) a {
+        display: none;
+    }
+
+    #news-top {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #news-top div:nth-child(1) {
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+
+    .tour {
+        justify-content: flex-start;
+        column-gap: 10px;
+    }
+}
